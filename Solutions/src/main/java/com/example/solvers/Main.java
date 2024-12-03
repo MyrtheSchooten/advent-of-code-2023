@@ -21,10 +21,11 @@ public class Main {
             System.out.println("Example (E) or input (I)?");
             String type = reader.readLine();
 
-            int solution =  switch (day) {
+            int solution = switch (day) {
                 case "1" -> Solver1.solve(type);
                 case "2" -> Solver2.solve(type);
                 case "3" -> Solver3.solve(type);
+                case "4" -> Solver4.solve(type);
                 default -> throw new IllegalArgumentException("Nope, not yet implemented");
             };
 
